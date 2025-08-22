@@ -1,10 +1,8 @@
 import Projects from "./Projects";
 import card1 from "../../assets/images/portfolio-images/stay-quick.png";
 import card2 from "../../assets/images/portfolio-images/preganency-helper.png";
-import card3 from "../../assets/images/portfolio-images/card-3.png";
-import card4 from "../../assets/images/portfolio-images/card-4.png";
-import card5 from "../../assets/images/portfolio-images/card-5.png";
-import card6 from "../../assets/images/portfolio-images/card-6.png";
+
+import card4 from "../../assets/images/portfolio-images/foodsy.png";
 
 const projectData = [
   {
@@ -25,24 +23,16 @@ const projectData = [
       "Track every stage of your pregnancy journey with our easy-to-use app. From the first positive test to your baby’s arrival, it provides helpful tools, guidance, and support to keep you informed, organized, and confident throughout this special time.",
     link: "https://www.behance.net/gallery/213497651/Pregnancy-Helper",
   },
+
   {
     id: 3,
-    image: card3,
+    image: card4,
     category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    title: "Foodsy",
     description:
-      "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
-    link: "#!",
+      "Discover a modern, user-friendly food delivery app designed to make ordering simple. From browsing restaurants to customizing meals and tracking your order, it offers smooth navigation, clean layouts, and intuitive tools to keep you informed, organized, and satisfied every step of the way.",
+    link: "https://www.behance.net/gallery/232994411/Foodsy",
   },
-  // {
-  //   id: 4,
-  //   image: card4,
-  //   category: "UI-UX DESIGN",
-  //   title: "Product Admin Dashboard",
-  //   description:
-  //     "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes and so on.",
-  //   link: "#!",
-  // },
   // {
   //   id: 5,
   //   image: card5,
@@ -85,14 +75,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-      <div className="text-center">
-        <a
-          href="#!"
-          className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
-        >
-          More Project
-        </a>
-      </div>
+      
     </div>
   );
 };

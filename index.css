@@ -14,13 +14,17 @@
   --tw-duration: 200ms;
   transition-duration: 200ms;
 }
+html{
+    scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+}
 
 @theme {
   --breakpoint-xxs: 21.25rem; /* COMMENT: 340px */
   --breakpoint-xs: 23.125rem; /* COMMENT: 363px */
   --breakpoint-xxl: 82.5rem; /* COMMENT: 1320px */
-  --color-picto-primary: #9929fb;
-  --color-picto-primary-dark: #650fa0;
+  --color-picto-primary: #1bc0ba;
+  --color-picto-primary-dark: #18aca7;
   --color-soft-white: #f0f1f3;
   --color-soft-dark: #87909d;
 }
@@ -30,6 +34,7 @@
 }
 body {
   font-family: "Work Sans", sans-serif;
+
 }
 
 .content {
@@ -51,11 +56,11 @@ body {
       transparent 15%
     ),
     /* bottom left */
-      radial-gradient(circle at 95% -15%, #da4df166 5%, transparent 30%),
+      radial-gradient(circle at 95% -15%, #97e7e5 5%, transparent 30%),
     /* top right */
-      radial-gradient(circle at center right, #c4f5e9b2 2%, transparent 35%); /* center right */
+      radial-gradient(circle at center right, #c4f5e9 2%, transparent 35%); /* center right */
 }
 .blog-background {
-  background: radial-gradient(circle at -10% 0%, #da4df166 1%, transparent 25%),
-    radial-gradient(circle at 110% 30%, #c4f5e9b2 5%, transparent 25%);
+  background: radial-gradient(circle at -10% 0%, #97e7e5 1%, transparent 25%),
+    radial-gradient(circle at 110% 30%, #c4f5e9 5%, transparent 25%);
 }

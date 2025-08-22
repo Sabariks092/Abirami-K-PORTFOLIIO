@@ -8,7 +8,7 @@ const InformationSummary = ({ item }) => {
                      font-semibold text-gray-700"
         >
           <item.icon className="text-gray-700" />
-          <span><a href="">{item.description}</a></span>
+          <span><a href={item.link} target="_blank">{item.description}</a></span>
         </div>
       </div>
     </div>

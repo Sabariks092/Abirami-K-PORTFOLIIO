@@ -1,7 +1,8 @@
-import person from "../../assets/images/Abirami K.png";
+import person from "../../assets/images/Abi K.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
+import resume from '../../assets/resume/Abirami-K-Resume.pdf'
 
 const Profile = () => {
   return (
@@ -14,7 +15,7 @@ const Profile = () => {
         <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
           <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
             <img
-              className="bg-soft-white h-[120%] object-cover"
+              className="bg-soft-white h-[100%] object-cover"
               src={person}
               alt=""
             />
@@ -45,13 +46,14 @@ const Profile = () => {
           <div className="mt-8 flex max-md:justify-center">
             <a
               className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
-              href="#!"
+              href="#portfolio"
             >
               My Projects
             </a>
             <a
               className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary  ms-4 text-xs xxs:text-[14px] sm:text-[16px]`}
-              href="#!"
+              href={resume} 
+              target="_blank" rel="noopener noreferrer" download
             >
               <FontAwesomeIcon icon={faDownload} /> Download CV
             </a>

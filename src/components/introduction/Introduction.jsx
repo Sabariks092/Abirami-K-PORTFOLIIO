@@ -4,6 +4,7 @@ import InformationSummary from "./InformationSummary";
 import { CiMail } from "react-icons/ci";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
+import resume from '../../assets/resume/Abirami-K-Resume.pdf'
 
 // Information summary data
 const informationSummaryData = [
@@ -11,16 +12,22 @@ const informationSummaryData = [
     id: 1,
     icon: CiMail,
     description: "Mail Me",
+    link: "mailto:abimerlin2002@gmail.com",
+    isDownload: false
   },
   {
     id: 2,
     icon: FaWhatsapp,
     description: "Say Hello",
+    link: "https://wa.me/918825923450?text=Hello%20Abirami%2C%20I%20would%20like%20to%20connect%20with%20you.",
+    isDownload: false
   },
   {
     id: 3,
     icon: MdOutlineFileDownload,
     description: "Resume",
+    link: resume,
+    isDownload: true 
   },
 ];
 
@@ -40,19 +47,19 @@ const Introduction = () => {
             <span
               
             >
-              <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl 
-                         font-bold bg-gradient-to-r from-purple-500 to-pink-500 
-                         bg-clip-text text-transparent">  Abirami K</p>
+           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl 
+               font-bold bg-clip-text text-transparent"
+   style={{ backgroundImage: 'linear-gradient(to right, #1bc0ba, #113b3aff)' }}>
+  Abirami K
+</p>
+
             
             </span>
           </p>
 
           {/* Sub Text */}
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I'm a Professional{" "}
-            <span className="bg-highlight">UI/UX Designer</span> based in
-            Cuddalore, TN. I strive to build immersive and beautiful web
-            applications through carefully crafted code and user-centric design.
+           I'm a Professional <span className="bg-highlight">UI/UX Designer</span> based in Cuddalore, TN, passionate about crafting engaging digital experiences. I strive to build immersive and beautiful web & mobile applications through carefully designed interfaces, seamless user flows, and user-centric design principles.
           </p>
 
           {/* Button */}

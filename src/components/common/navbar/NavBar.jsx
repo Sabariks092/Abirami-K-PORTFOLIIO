@@ -5,9 +5,7 @@ import { Link } from "react-scroll";
 const navItems = [
   { id: 1, name: "Home", url: "introduction" },
   { id: 2, name: "About", url: "profile" },
-  { id: 3, name: "Process", url: "work-process" },
   { id: 4, name: "Portfolio", url: "portfolio" },
-  { id: 5, name: "Blog", url: "blog" },
   { id: 6, name: "Services", url: "services" },
 ];
 
@@ -27,7 +25,7 @@ const menu = navItems.map((item) => (
       spy={true}
       offset={-140}
       activeStyle={{
-        backgroundColor: "#9929fb",
+        backgroundColor: "#18aca7",
         color: "white",
       }}
       className={`hover:text-picto-primary px-5 py-3 mx-1`}
@@ -92,10 +90,11 @@ const NavBar = () => {
             duration={900}
             className="flex items-center border-0 lg:max-xxl:ps-5"
           >
-            <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
-            <p className="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">
-              Brooklyn
-            </p>
+            <p className="text-2xl xxs:text-2xl sm:max-xl:text-3xl xl:text-3xl 
+               font-bold bg-clip-text text-transparent"
+   style={{ backgroundImage: 'linear-gradient(to right, #04807dff, #1bc0ba)' }}>
+  Abirami K
+</p>
           </Link>
         </div>
 
