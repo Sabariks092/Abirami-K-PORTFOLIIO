@@ -19,7 +19,7 @@ const Profile = () => {
       <div className="flex max-md:flex-col justify-between items-center gap-6">
         {/* Profile image */}
         <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
-          <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
+          <div className="max-w-126 h-137 object-fill overflow-hidden rounded-xl">
             <img
               className="bg-soft-white h-[100%] object-cover"
               src={person}
@@ -54,7 +54,9 @@ const Profile = () => {
               <li>Shaped 5+ mobile app projects from research to launch using design thinking.</li>
               <li>Created wireframes, prototypes, and high-fidelity UI designs to improve usability and engagement.</li>
               <li>Collaborated with developers for smooth design-to-development handoff.</li>
-              <li>Ensured consistency and accessibility by applying design systems and usability testing.</li>
+              <li>Ensured consistency and accessibility by applying design systems and conducting usability testing.</li>
+              <li>Designed social media posts, marketing creatives, and videos to boost brand presence and engagement.</li>
+              <li>Contributed to website design projects, ensuring responsive layouts and user-friendly interfaces.</li>
             </ul>
           </div>
 

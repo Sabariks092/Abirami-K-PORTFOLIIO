@@ -5,6 +5,7 @@ import { CiMail } from "react-icons/ci";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import resume from '../../assets/resume/Abirami-K-Resume.pdf'
+import TypeWriterEffect from 'react-typewriter-effect';
 
 // Information summary data
 const informationSummaryData = [
@@ -43,35 +44,44 @@ const Introduction = () => {
           {/* Heading */}
           <p className="text-2xl xxs:text-2xl sm:max-xl:text-3xl xl:text-4xl font-semibold w-full leading-tight">
             Hello, I’m
-         
-            <span
-              
-            >
-           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl 
-               font-bold bg-clip-text text-transparent"
-   style={{ backgroundImage: 'linear-gradient(to right, #04807dff, #1bc0ba)' }}>
-  Abirami K
+          </p>
+
+        <p
+  className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-bold"
+>
+  <span
+    className="bg-clip-text text-transparent"
+    style={{
+      backgroundImage: "linear-gradient(to right, #04807dff, #1bc0ba)",
+    }}
+  >
+    <TypeWriterEffect
+      textStyle={{
+        fontWeight: 'bold',
+        backgroundImage: "linear-gradient(to right, #04807dff, #1bc0ba)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}
+      startDelay={200}
+      cursorColor="#04807d"
+      cursorBlinking={true}
+      cursorStyle="]"
+      multiText={[
+        'Abirami K',
+        'UI/UX Designer'
+      ]}
+      multiTextDelay={1500}
+      typeSpeed={100}
+      multiTextLoop
+    />
+  </span>
 </p>
 
-            
-            </span>
-          </p>
 
           {/* Sub Text */}
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-           
-           Passionate UI/UX Designer with 1.5 years of design experience, including 6 months of professional work in a company environment. Skilled in creating user-friendly web and mobile interfaces, wireframes, prototypes, and design systems. Experienced in collaborating with developers and stakeholders to deliver designs that improve usability and engagement. Strong foundation in design thinking and user research, with a portfolio of both professional and personal projects.
+            Passionate UI/UX Designer with 1.5 years of design experience, including 6 months of professional work in a company environment. Skilled in creating user-friendly web and mobile interfaces, wireframes, prototypes, and design systems. Experienced in collaborating with developers and stakeholders to deliver designs that improve usability and engagement. Strong foundation in design thinking and user research, with a portfolio of both professional and personal projects.
           </p>
-
-          {/* Button */}
-          {/* <p className="text-center lg:text-start">
-            <a
-              className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:example@gmail.com"
-            >
-              Let’s Connect!
-            </a>
-          </p> */}
 
           {/* Info Grid */}
           <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-[100px] gap-1">
