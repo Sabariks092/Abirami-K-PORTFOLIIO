@@ -59,7 +59,8 @@ const Introduction = () => {
 
           {/* Sub Text */}
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-           I'm a Professional <span className="bg-highlight">UI/UX Designer</span> based in Cuddalore, TN, passionate about crafting engaging digital experiences. I strive to build immersive and beautiful web & mobile applications through carefully designed interfaces, seamless user flows, and user-centric design principles.
+           
+           Passionate UI/UX Designer with 1.5 years of design experience, including 6 months of professional work in a company environment. Skilled in creating user-friendly web and mobile interfaces, wireframes, prototypes, and design systems. Experienced in collaborating with developers and stakeholders to deliver designs that improve usability and engagement. Strong foundation in design thinking and user research, with a portfolio of both professional and personal projects.
           </p>
 
           {/* Button */}
