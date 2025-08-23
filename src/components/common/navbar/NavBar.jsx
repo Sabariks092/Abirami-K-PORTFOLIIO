@@ -25,15 +25,19 @@ const menu = navItems.map((item) => (
       spy={true}
       offset={-140}
       activeStyle={{
-        backgroundColor: "#18aca7",
-        color: "white",
+        borderBottom: "2px solid #18aca7",
+        color: "black",
       }}
-      className={`hover:text-picto-primary px-5 py-3 mx-1`}
+      className="relative px-5 py-3 mx-1 font-medium text-black 
+        after:content-[''] after:absolute after:left-0 after:bottom-0 
+        after:w-0 after:h-[2px] after:bg-[#18aca7] after:transition-all after:duration-300 
+        hover:after:w-full"
     >
       {item.name}
     </Link>
   </li>
 ));
+
 
 const NavBar = () => {
   const [position, setPosition] = useState(0);
@@ -90,11 +94,41 @@ const NavBar = () => {
             duration={900}
             className="flex items-center border-0 lg:max-xxl:ps-5"
           >
-            <p className="text-2xl xxs:text-2xl sm:max-xl:text-3xl xl:text-3xl 
+            <div
+              style={{
+                width: "45px",
+                height: "45px",
+                background: "linear-gradient(135deg, #04807dff, #1bc0ba)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: "50%",
+              }}
+              className="me-3"
+            >
+              <span
+                style={{
+                  background: "linear-gradient(135deg, #ffffff, #d9d9d9)", // white gradient
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: "bold",
+                  fontSize: "30px",
+                }}
+              >
+                A
+              </span>
+            </div>
+
+            <p
+              className="text-2xl xxs:text-2xl sm:max-xl:text-3xl xl:text-3xl 
                font-bold bg-clip-text text-transparent"
-   style={{ backgroundImage: 'linear-gradient(to right, #04807dff, #1bc0ba)' }}>
-  Abirami K
-</p>
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #04807dff, #1bc0ba)",
+              }}
+            >
+              Abirami K
+            </p>
           </Link>
         </div>
 

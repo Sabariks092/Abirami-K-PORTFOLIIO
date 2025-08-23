@@ -49,7 +49,7 @@ const Introduction = () => {
             >
            <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl 
                font-bold bg-clip-text text-transparent"
-   style={{ backgroundImage: 'linear-gradient(to right, #1bc0ba, #113b3aff)' }}>
+   style={{ backgroundImage: 'linear-gradient(to right, #04807dff, #1bc0ba)' }}>
   Abirami K
 </p>
 

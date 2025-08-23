@@ -34,13 +34,13 @@ const Profile = () => {
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
-            I am Professional User Experience Designer
+            I am Professional <br /> UI/UX Designer
           </h2>
           <div
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
-             Passionate UI/UX Designer with 2 years of design experience, including 6 months of professional work in a company environment. Skilled in creating user-friendly web and mobile interfaces, wireframes, prototypes, and design systems. Experienced in collaborating with developers and stakeholders to deliver designs that improve usability and engagement. Strong foundation in design thinking and user research, with a portfolio of both professional and personal projects.
+             Passionate UI/UX Designer with 1.5 years of design experience, including 6 months of professional work in a company environment. Skilled in creating user-friendly web and mobile interfaces, wireframes, prototypes, and design systems. Experienced in collaborating with developers and stakeholders to deliver designs that improve usability and engagement. Strong foundation in design thinking and user research, with a portfolio of both professional and personal projects.
             </p>
           </div>
           <div className="mt-8 flex max-md:justify-center">

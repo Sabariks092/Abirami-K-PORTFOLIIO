@@ -1,13 +1,8 @@
 import React from "react";
-import {
-  FaUserAlt,
-  FaDesktop,
-  FaProjectDiagram,
-  FaPenFancy,
-  FaSearch,
-  FaPuzzlePiece,
-} from "react-icons/fa";
+import { FaUserAlt, FaDesktop, FaPenFancy, FaSearch, FaPuzzlePiece, FaFont, FaIcons, FaCode } from "react-icons/fa";
+import { FaProjectDiagram } from "react-icons/fa";
 import { SiMaterialdesign } from "react-icons/si";
+
 
 // Add descriptions for each skill
 const skills = [
@@ -53,7 +48,26 @@ const skills = [
     description: "Identifying and solving complex design challenges.",
     progress: 95,
   },
+  {
+    name: "Typography",
+    icon: <FaFont />, // You can use FaFont or another relevant icon
+    description: "Enhancing readability and aesthetics through type choices.",
+    progress: 85,
+  },
+  {
+    name: "Iconography",
+    icon: <FaIcons />, // Good for representing iconography
+    description: "Creating and using icons to support visual communication.",
+    progress: 80,
+  },
+  {
+    name: "Implementation",
+    icon: <FaCode />, // Represents actual implementation
+    description: "Translating designs into functional user interfaces.",
+    progress: 78,
+  },
 ];
+
 
 const Skills = () => {
   return (
@@ -70,7 +84,8 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="skills-grid">
+        <div className="skills-grid  flex flex-wrap justify-center gap-3">
+
           {skills.map((skill, index) => (
             <div key={index} className="skill-card">
               <div className="skill-icon-top">{skill.icon}</div>
@@ -82,19 +97,14 @@ const Skills = () => {
       </div>
 
       <style jsx>{`
-        .skills-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 24px;
-          justify-content: center;
-          justify-items: center;
-        }
+     
         .skill-card {
           background: #fff;
           padding: 28px 20px;
           border-radius: 12px;
           box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
           display: flex;
+          max-width: 250px;
           flex-direction: column;
           align-items: center;
           text-align: center;

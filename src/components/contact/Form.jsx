@@ -1,3 +1,7 @@
+import React, { useState } from "react";
+import Loading from "../../components/common/loading/Loading";
+
+// Telegram Icon
 const telegramSVG = (
   <svg
     className="w-4 md:w-6 aspect-square"
@@ -16,62 +20,97 @@ const commonClass =
   "input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-[15px] md:placeholder:text-lg focus:border-picto-primary border-[#E6E8EB] w-full rounded-none px-0";
 
 const Form = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch(
+        "https://abirami-portfolio-backend.onrender.com/form-handler/Enquiry-Form.php",
+        {
+          method: "POST",
+          body: new FormData(e.target),
+        }
+      );
+
+      const data = await res.json();
+
+      if (data.status === "success") {
+        setShowPopup(true);
+        e.target.reset();
+      } else {
+        alert("❌ Error: " + data.message);
+      }
+    } catch (error) {
+      alert("⚠️ Something went wrong: " + error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div>
       <p className="text-[12px] xs:text-[14px] max-lg:text-center sm:text-lg font-normal text-soft-dark">
         I'm always open to discussing product design work or partnership
         opportunities.
       </p>
+
       <div className="mx-2">
-        <form className="flex flex-col gap-4 mt-4">
-          <input
-            type="text"
-            placeholder="Name*"
-            className={`${commonClass}`}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email*"
-            className={`${commonClass}`}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Location*"
-            className={`${commonClass}`}
-            required
-          />
-
-          <div className="flex max-xs:flex-col max-xs:gap-4">
-            <input
-              type="text"
-              placeholder="Budget*"
-              className={`${commonClass} xs:w-[50%] me-5`}
-              required
-            />
-            <input
-              type="text"
-              placeholder="Subject*"
-              className={`${commonClass}`}
-              required
-            />
-          </div>
-
-          <input
-            type="text"
-            placeholder="Message*"
-            className={`${commonClass}`}
-            required
-          />
+        <form
+          className="flex flex-col gap-4 mt-4"
+          method="POST"
+          onSubmit={handleSubmit}
+        >
+          <input type="text" name="name" placeholder="Name*" className={commonClass} required />
+          <input type="email" name="email" placeholder="Email*" className={commonClass} required />
+          <input type="number" name="mobile" placeholder="Mobile*" className={commonClass} required />
+          <input type="text" name="subject" placeholder="Subject*" className={commonClass} required />
+          <textarea name="message" placeholder="Message*" className={commonClass} required />
           <button
             type="submit"
-            className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4"
+            className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4 disabled:opacity-50"
+            disabled={loading}
           >
-            Submit {telegramSVG}
+            {loading ? "Sending..." : "Submit"} {telegramSVG}
           </button>
         </form>
       </div>
+
+      {/* Full-Screen Loader Overlay */}
+      {loading && (
+        <div className="fixed inset-0 flex items-center justify-center bg-white/70 z-[9999]">
+          <Loading />
+        </div>
+      )}
+
+      {/* Full-Screen Popup Modal */}
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] bg-opacity-10 z-50">
+          <div className="bg-white py-[80px] px-[40px] rounded-lg shadow-lg relative max-w-lg w-[90%] text-center">
+            <button
+              onClick={handleClosePopup}
+              className="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl"
+            >
+              ×
+            </button>
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">
+              🎉 Thank You for reaching me!
+            </h2>
+            <p className="text-gray-600 text-sm md:text-base">
+              Your enquiry has been received successfully.  
+              I will quickly get back to you 🙂
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

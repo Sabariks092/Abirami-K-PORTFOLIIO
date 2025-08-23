@@ -15,9 +15,9 @@ const rolesData = [
   },
   {
     id: 3,
-    title: "Web Development",
+    title: "Graphic Design",
     description:
-      "I build responsive and high-performance web applications using modern technologies, ensuring accessibility, scalability, and maintainability.",
+      "I create compelling visual content, including logos, branding materials, and marketing collateral, to effectively communicate messages and enhance brand identity.",
   },
 ];
 

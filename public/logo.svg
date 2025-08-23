@@ -1,3 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
-  <path d="M16.428,0H5.547c-1.93,0-3.5,1.57-3.5,3.5V24H21.996l.053-18.334L16.428,0ZM5.047,21V3.5c0-.275,.225-.5,.5-.5H14.047v5h4.995l-.038,13H5.047Zm1.953-5h10v3H7v-3Zm1.5-8c0-1.105,.895-2,2-2s2,.895,2,2-.895,2-2,2-2-.895-2-2Zm5.5,6H7v-1c0-1.105,.895-2,2-2h3c1.105,0,2,.895,2,2v1Z" fill="#ffffff"/>
+<svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle background with gradient -->
+  <defs>
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04807d" />
+      <stop offset="100%" stop-color="#1bc0ba" />
+    </linearGradient>
+
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#d9d9d9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circle -->
+  <circle cx="22.5" cy="22.5" r="22.5" fill="url(#circleGradient)" />
+
+  <!-- Centered text -->
+  <text
+    x="50%"
+    y="50%"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-size="30"
+    font-weight="bold"
+    fill="url(#textGradient)"
+    font-family="Arial, sans-serif"
+  >
+    A
+  </text>
 </svg>
