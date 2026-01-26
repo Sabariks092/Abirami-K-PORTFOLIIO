@@ -1,4 +1,4 @@
-import person from "../../assets/abirami-k.png";
+import person from "../../assets/abirami-k.webp";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 import { CiMail } from "react-icons/ci";
