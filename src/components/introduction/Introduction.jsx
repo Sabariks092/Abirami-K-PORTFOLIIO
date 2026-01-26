@@ -1,4 +1,4 @@
-import person from "../../assets/images/Abi K.png";
+import person from "../../assets/abirami-k.png";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 import { CiMail } from "react-icons/ci";
@@ -80,7 +80,7 @@ const Introduction = () => {
 
           {/* Sub Text */}
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            Passionate UI/UX Designer with 1.5 years of design experience, including 6 months of professional work in a company environment. Skilled in creating user-friendly web and mobile interfaces, wireframes, prototypes, and design systems. Experienced in collaborating with developers and stakeholders to deliver designs that improve usability and engagement. Strong foundation in design thinking and user research, with a portfolio of both professional and personal projects.
+            Passionate UI/UX Designer with 2 years of design experience, including 11+ months of professional work in a company environment. Skilled in creating user-friendly web and mobile interfaces, wireframes, prototypes, and design systems. Experienced in collaborating with developers and stakeholders to deliver designs that improve usability and engagement. Strong foundation in design thinking and user research, with a portfolio of both professional and personal projects.
           </p>
 
           {/* Info Grid */}

@@ -1,4 +1,4 @@
-import person from "../../assets/images/Abi K.png";
+import person from "../../assets/abirami-k.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
@@ -48,7 +48,7 @@ const Profile = () => {
           >
             <p className="mb-3">
               LeMeniz Technologies Pvt. Ltd., Pondicherry <br />
-              (Mar 2025 – Present | 5+ months)
+              (Mar 2025 – Present | 11+ months)
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600">
               <li>Shaped 5+ mobile app projects from research to launch using design thinking.</li>
