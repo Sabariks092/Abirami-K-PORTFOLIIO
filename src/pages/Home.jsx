@@ -11,10 +11,12 @@ import Contact from "../components/contact/Contact";
 import "../../index.css";
 import Skills from "../components/skills/Skills";
 import Tools from "../components/skills/Tools";
+import WhatsAppButton from "../components/common/WhatsAppButton";
 
 const Home = () => {
   return (
     <div className="relative">
+      <WhatsAppButton />
       <div className="introduction-profile-background">
         <div className="content">
           <Introduction />

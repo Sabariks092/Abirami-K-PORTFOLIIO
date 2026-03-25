@@ -1,21 +1,15 @@
-import React from "react";
-import { SiFigma, SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects } from "react-icons/si";
-import { TbBrandAdobeXd } from "react-icons/tb";
-import { FaDrawPolygon } from "react-icons/fa";
-import { BiNetworkChart } from "react-icons/bi";
+import { SiFigma, SiAdobephotoshop, SiAdobeillustrator, SiAdobe, SiCanva } from "react-icons/si";
 
 const tools = [
   { name: "Figma", icon: <SiFigma style={{ color: "#8b5cf6" }} /> },
-  { name: "Adobe XD", icon: <TbBrandAdobeXd style={{ color: "#8b5cf6" }} /> },
+  { name: "Canva", icon: <SiCanva style={{ color: "#8b5cf6" }} /> },
+  { name: "Adobe Express", icon: <SiAdobe style={{ color: "#8b5cf6" }} /> },
   { name: "Photoshop", icon: <SiAdobephotoshop style={{ color: "#8b5cf6" }} /> },
   { name: "Illustrator", icon: <SiAdobeillustrator style={{ color: "#8b5cf6" }} /> },
-  { name: "After Effects", icon: <SiAdobeaftereffects style={{ color: "#8b5cf6" }} /> },
-  { name: "Miro", icon: <BiNetworkChart style={{ color: "#8b5cf6" }} /> },
-  { name: "InVision", icon: <FaDrawPolygon style={{ color: "#8b5cf6" }} /> },
 ];
 
 const Tools = () => {
-  // Split tools into two rows: 3 in first, 4 in second
+  // Split tools into two rows: 3 in first, 2 in second
   const firstRow = tools.slice(0, 3);
   const secondRow = tools.slice(3);
   return (

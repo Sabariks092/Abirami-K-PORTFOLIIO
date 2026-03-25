@@ -1,4 +1,5 @@
 import person from "../../assets/abirami-k.webp";
+import { calculateExperience } from "../../utils/experience";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 import { CiMail } from "react-icons/ci";
@@ -33,6 +34,8 @@ const informationSummaryData = [
 ];
 
 const Introduction = () => {
+  const expDuration = calculateExperience("2025-03-01");
+
   return (
     <div
       className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 max-xl:gap-2 p-2 max-xxl:px-4"
@@ -78,9 +81,8 @@ const Introduction = () => {
 </p>
 
 
-          {/* Sub Text */}
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            Passionate UI/UX Designer with 2 years of design experience, including 11+ months of professional work in a company environment. Skilled in creating user-friendly web and mobile interfaces, wireframes, prototypes, and design systems. Experienced in collaborating with developers and stakeholders to deliver designs that improve usability and engagement. Strong foundation in design thinking and user research, with a portfolio of both professional and personal projects.
+            UI/UX Designer With {expDuration} Of Experience In Creating User-Centered Digital Products. Skilled In Research, Wireframing, And Prototyping. Experienced In Designing ERMS, HRMS, And POS Applications With A Focus On Usability And Efficiency. Proficient In Figma And Branding Design. Passionate About Building Clean, Intuitive, And Visually Engaging Experiences.
           </p>
 
           {/* Info Grid */}

@@ -1,6 +1,5 @@
 import React from "react";
-import { FaUserAlt, FaDesktop, FaPenFancy, FaSearch, FaPuzzlePiece, FaFont, FaIcons, FaCode } from "react-icons/fa";
-import { FaProjectDiagram } from "react-icons/fa";
+import { FaUserAlt, FaDesktop, FaProjectDiagram, FaPenFancy, FaSearch, FaAddressCard, FaAd, FaHtml5, FaJsSquare } from "react-icons/fa";
 import { SiMaterialdesign } from "react-icons/si";
 
 
@@ -10,61 +9,51 @@ const skills = [
     name: "User Experience",
     icon: <FaUserAlt />,
     description: "Designing intuitive and engaging experiences for users.",
-    progress: 90,
   },
   {
     name: "User Interface",
     icon: <FaDesktop />,
     description: "Crafting visually appealing and user-friendly interfaces.",
-    progress: 85,
   },
   {
     name: "Wireframing",
     icon: <FaProjectDiagram />,
     description: "Creating low-fidelity layouts to visualize structure.",
-    progress: 80,
   },
   {
-    name: "Prototyping",
+    name: "Prototype",
     icon: <FaPenFancy />,
     description: "Developing interactive prototypes for testing and feedback.",
-    progress: 75,
   },
   {
     name: "Design Thinking",
     icon: <SiMaterialdesign />,
     description: "Applying design thinking methods for innovative solutions.",
-    progress: 88,
   },
   {
     name: "User Research",
     icon: <FaSearch />,
     description: "Conducting research to understand user needs deeply.",
-    progress: 82,
   },
   {
-    name: "Problem Solving",
-    icon: <FaPuzzlePiece />,
-    description: "Identifying and solving complex design challenges.",
-    progress: 95,
+    name: "Logo & Business Card Design",
+    icon: <FaAddressCard />,
+    description: "Creating unique brand identities and professional business cards.",
   },
   {
-    name: "Typography",
-    icon: <FaFont />, // You can use FaFont or another relevant icon
-    description: "Enhancing readability and aesthetics through type choices.",
-    progress: 85,
+    name: "Flyers & Banner Design",
+    icon: <FaAd />,
+    description: "Designing eye-catching promotional materials for branding.",
   },
   {
-    name: "Iconography",
-    icon: <FaIcons />, // Good for representing iconography
-    description: "Creating and using icons to support visual communication.",
-    progress: 80,
+    name: "HTML & CSS",
+    icon: <FaHtml5 />,
+    description: "Translating designs into responsive and structured web layouts.",
   },
   {
-    name: "Implementation",
-    icon: <FaCode />, // Represents actual implementation
-    description: "Translating designs into functional user interfaces.",
-    progress: 78,
+    name: "JavaScript",
+    icon: <FaJsSquare />,
+    description: "Adding interactivity and dynamic functionality to web interfaces.",
   },
 ];
 

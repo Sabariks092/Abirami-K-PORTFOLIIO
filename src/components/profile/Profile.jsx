@@ -1,10 +1,14 @@
-import person from "../../assets/abirami-k.webp";
+import person from "../../assets/abirami-k.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
 import resume from '../../assets/resume/Abirami-K-Resume.pdf'
 
+import { calculateExperience } from "../../utils/experience";
+
 const Profile = () => {
+  const expDuration = calculateExperience("2025-03-01");
+
   return (
     <div
       className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
@@ -48,15 +52,15 @@ const Profile = () => {
           >
             <p className="mb-3">
               LeMeniz Technologies Pvt. Ltd., Pondicherry <br />
-              (Mar 2025 – Present | 11+ months)
+              (Mar 2025 – Present | {expDuration})
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600">
-              <li>Shaped 5+ mobile app projects from research to launch using design thinking.</li>
-              <li>Created wireframes, prototypes, and high-fidelity UI designs to improve usability and engagement.</li>
-              <li>Collaborated with developers for smooth design-to-development handoff.</li>
-              <li>Ensured consistency and accessibility by applying design systems and conducting usability testing.</li>
-              <li>Designed social media posts, marketing creatives, and videos to boost brand presence and engagement.</li>
-              <li>Contributed to website design projects, ensuring responsive layouts and user-friendly interfaces.</li>
+              <li>Designed 7+ Mobile App UI Projects From Research To High-Fidelity Prototypes Using Figma</li>
+              <li>Collaborated With Developers For Smooth Design-To-Development Handoff</li>
+              <li>Applied Design Thinking And Usability Principles To Create Clean, User-Friendly Interfaces</li>
+              <li>Designed End-To-End UI/UX For ERMS, HRMS, And POS Applications, Improving Workflow Efficiency</li>
+              <li>Created Logos, Brochures, Banners, Flyers, And Social Media Creatives For Branding</li>
+              <li>Edited Promotional Videos And Produced AI-Generated Content For Campaigns</li>
             </ul>
           </div>
 
