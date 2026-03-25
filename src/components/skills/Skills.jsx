@@ -75,7 +75,7 @@ const Skills = () => {
       className="skills-section"
       style={{ background: "#f8f9fc", padding: "120px 20px" }}
     >
-      <div className="container">
+      <div className="container mx-auto">
         <div className="mx-auto max-w-144.25 mb-[60px]">
           <p className="section-title text-center">Skills</p>
           <p className="font-normal text-center  text-[18px] max-sm:text-[14px] pt-6 text-gray-400">
