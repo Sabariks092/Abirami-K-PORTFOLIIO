@@ -17,6 +17,8 @@
         "@fortawesome/free-solid-svg-icons": "^6.7.2",
         "@fortawesome/react-fontawesome": "^0.2.2",
         "@tailwindcss/vite": "^4.0.14",
+        "framer-motion": "^12.38.0",
+        "gsap": "^3.14.2",
         "localforage": "^1.10.0",
         "match-sorter": "^8.0.0",
         "react": "^19.0.0",
@@ -29,6 +31,7 @@
         "react-spinners": "^0.17.0",
         "react-typewriter-effect": "^1.1.0",
         "sort-by": "^1.2.0",
+        "split-type": "^0.3.4",
         "swiper": "^11.2.8",
         "tailwindcss": "^4.0.14"
     },

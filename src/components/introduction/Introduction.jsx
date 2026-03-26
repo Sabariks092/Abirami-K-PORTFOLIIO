@@ -42,7 +42,7 @@ const Introduction = () => {
       id="introduction"
     >
       {/* Left Side Content */}
-      <div className="w-full flex flex-col justify-between max-lg:text-center">
+      <div className="w-full flex flex-col justify-between ">
         <div className="pt-13 me-31.5 w-full lg:w-auto transition-all duration-500">
           {/* Heading */}
           <p className="text-2xl xxs:text-2xl sm:max-xl:text-3xl xl:text-4xl font-semibold w-full leading-tight">
@@ -50,10 +50,10 @@ const Introduction = () => {
           </p>
 
         <p
-  className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-bold"
+  className="text-3xl xxs:text-4xl md:text-left text-center md:mx-none mx-auto sm:max-xl:text-5xl xl:text-6xl font-bold"
 >
   <span
-    className="bg-clip-text text-transparent"
+    className="bg-clip-text text-center text-transparent"
     style={{
       backgroundImage: "linear-gradient(to right, #04807dff, #1bc0ba)",
     }}
@@ -86,7 +86,7 @@ const Introduction = () => {
           </p>
 
           {/* Info Grid */}
-          <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-[100px] gap-1">
+          <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit md:mt-[50px] mt-6 gap-1">
             {informationSummaryData.map((item) => (
               <InformationSummary key={item.id} item={item} />
             ))}

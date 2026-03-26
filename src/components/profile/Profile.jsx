@@ -5,6 +5,7 @@ import SocialMedia from "../common/socialMedia/SocialMedia";
 import resume from '../../assets/resume/Abirami-K-Resume.pdf'
 
 import { calculateExperience } from "../../utils/experience";
+import { FaPaintBrush } from "react-icons/fa";
 
 const Profile = () => {
   const expDuration = calculateExperience("2025-03-01");
@@ -48,19 +49,19 @@ const Profile = () => {
             UI/UX Designer
           </h2>
           <div
-            className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
+            className={`text-xs xs:text-[16px] lg:text-lg font-normal  text-gray-600`}
           >
             <p className="mb-3">
               LeMeniz Technologies Pvt. Ltd., Pondicherry <br />
               (Mar 2025 – Present | {expDuration})
             </p>
-            <ul className="list-disc list-inside space-y-1 text-gray-600">
-              <li>Designed 7+ Mobile App UI Projects From Research To High-Fidelity Prototypes Using Figma</li>
-              <li>Collaborated With Developers For Smooth Design-To-Development Handoff</li>
-              <li>Applied Design Thinking And Usability Principles To Create Clean, User-Friendly Interfaces</li>
-              <li>Designed End-To-End UI/UX For ERMS, HRMS, And POS Applications, Improving Workflow Efficiency</li>
-              <li>Created Logos, Brochures, Banners, Flyers, And Social Media Creatives For Branding</li>
-              <li>Edited Promotional Videos And Produced AI-Generated Content For Campaigns</li>
+            <ul className="list-disc list-inside space-y-3 text-gray-600">
+              <li className="list text-[16px] text-gray-800 flex flex-row items-start gap-2"> <FaPaintBrush className="text-[#1BC0BA] mt-1 border rounded-full  px-1 py-1" size={28}/> <span>Designed 7+ Mobile App UI Projects From Research To High-Fidelity Prototypes Using Figma</span></li>
+              <li className="list text-[16px] text-gray-800 flex flex-row items-start gap-2"> <FaPaintBrush className="text-[#1BC0BA] mt-1 border rounded-full  px-1 py-1" size={28}/> <span>Collaborated With Developers For Smooth Design-To-Development Handoff</span></li>
+              <li className="list text-[16px] text-gray-800 flex flex-row items-start gap-2"> <FaPaintBrush className="text-[#1BC0BA] mt-1 border rounded-full  px-1 py-1" size={28}/> <span>Applied Design Thinking And Usability Principles To Create Clean, User-Friendly Interfaces</span></li>
+              <li className="list text-[16px] text-gray-800 flex flex-row items-start gap-2"> <FaPaintBrush className="text-[#1BC0BA] mt-1 border rounded-full  px-1 py-1" size={28}/> <span>Designed End-To-End UI/UX For ERMS, HRMS, And POS Applications, Improving Workflow Efficiency</span></li>
+              <li className="list text-[16px] text-gray-800 flex flex-row items-start gap-2"> <FaPaintBrush className="text-[#1BC0BA] mt-1 border rounded-full  px-1 py-1" size={28}/> <span>Created Logos, Brochures, Banners, Flyers, And Social Media Creatives For Branding</span></li>
+              <li className="list text-[16px] text-gray-800 flex flex-row items-start gap-2"> <FaPaintBrush className="text-[#1BC0BA] mt-1 border rounded-full  px-1 py-1" size={28}/> <span>Edited Promotional Videos And Produced AI-Generated Content For Campaigns</span></li>
             </ul>
           </div>
 

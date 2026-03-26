@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUserAlt, FaDesktop, FaProjectDiagram, FaPenFancy, FaSearch, FaAddressCard, FaAd, FaHtml5, FaJsSquare } from "react-icons/fa";
+import { FaUserAlt, FaDesktop, FaProjectDiagram, FaPenFancy, FaSearch, FaAddressCard, FaAd, FaHtml5, FaJsSquare, FaCss3Alt, FaBootstrap, FaBrush, FaPaintBrush, FaOptinMonster, FaApper, FaPaperPlane, FaNewspaper, FaLightbulb } from "react-icons/fa";
 import { SiMaterialdesign } from "react-icons/si";
 
 
@@ -27,7 +27,7 @@ const skills = [
   },
   {
     name: "Design Thinking",
-    icon: <SiMaterialdesign />,
+    icon: <FaLightbulb />,
     description: "Applying design thinking methods for innovative solutions.",
   },
   {
@@ -36,19 +36,44 @@ const skills = [
     description: "Conducting research to understand user needs deeply.",
   },
   {
-    name: "Logo & Business Card Design",
-    icon: <FaAddressCard />,
-    description: "Creating unique brand identities and professional business cards.",
+    name: "Logo",
+    icon: <FaPaintBrush />,
+    description: "Creating unique brand identities by designing memorable logos.",
   },
   {
-    name: "Flyers & Banner Design",
+    name: "Business Card Design",
+    icon: <FaAddressCard />,
+    description: "Designing professional business cards that leave a lasting impression.",
+  },
+  {
+    name: "Brochure Design",
+    icon: <FaNewspaper />,
+    description: "Designing professional brochures that effectively communicate your message.",
+  },
+  {
+    name: "Flyer",
+    icon: <FaPaperPlane />,
+    description: "Designing eye-catching promotional materials for branding.",
+  },
+  {
+    name: "Banner & Poster Design",
     icon: <FaAd />,
     description: "Designing eye-catching promotional materials for branding.",
   },
   {
-    name: "HTML & CSS",
+    name: "HTML5",
     icon: <FaHtml5 />,
     description: "Translating designs into responsive and structured web layouts.",
+  },
+  {
+    name: "CSS3",
+    icon: <FaCss3Alt />,
+    description: "Styling web pages with cascading style sheets.",
+  },
+  {
+    name: "Bootstrap",
+    icon: <FaBootstrap />,
+    description: "Utilizing the Bootstrap framework for responsive and mobile-first web development.",
   },
   {
     name: "JavaScript",
@@ -77,7 +102,7 @@ const Skills = () => {
 
           {skills.map((skill, index) => (
             <div key={index} className="skill-card">
-              <div className="skill-icon-top">{skill.icon}</div>
+              <div className="skill-icon-top border p-3.5 rounded-full">{skill.icon}</div>
               <h3 className="skill-title">{skill.name}</h3>
               <p className="skill-description">{skill.description}</p>
             </div>
